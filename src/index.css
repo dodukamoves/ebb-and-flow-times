@@ -8,37 +8,37 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Yoga & Pilates Color Palette */
-    --background: 32 28% 97%; /* F7F5F2 - soft cream */
-    --foreground: 0 0% 20%; /* dark gray for text */
+    /* Vibrant Yoga & Pilates Color Palette */
+    --background: 0 0% 98%; /* soft white */
+    --foreground: 0 0% 15%; /* dark text */
 
     --card: 0 0% 100%; /* white cards */
-    --card-foreground: 0 0% 20%;
+    --card-foreground: 0 0% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 20%;
+    --popover-foreground: 0 0% 15%;
 
-    --primary: 1 60% 69%; /* E37E7F - coral rose */
+    --primary: 337 82% 66%; /* EF6090 - vibrant pink */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 13 78% 72%; /* EE9F80 - warm coral */
-    --secondary-foreground: 0 0% 20%;
+    --secondary: 21 77% 71%; /* EEA07F - peachy orange */
+    --secondary-foreground: 0 0% 15%;
 
-    --muted: 210 29% 88%; /* D2DDE7 - lavender blue */
+    --muted: 186 69% 90%; /* light cyan tint */
     --muted-foreground: 0 0% 40%;
 
-    --accent: 344 28% 75%; /* D6A0A8 - mauve */
-    --accent-foreground: 0 0% 20%;
+    --accent: 248 78% 71%; /* 8E79F0 - purple */
+    --accent-foreground: 0 0% 100%;
 
-    --yoga: 13 78% 72%; /* EE9F80 - warm coral for yoga */
-    --pilates: 210 29% 88%; /* D2DDE7 - lavender blue for pilates */
+    --yoga: 345 80% 70%; /* F17398 - coral pink for yoga */
+    --pilates: 186 69% 74%; /* 92E2EB - cyan for pilates */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 1 60% 69%;
+    --input: 0 0% 92%;
+    --ring: 337 82% 66%;
 
     --radius: 1rem;
   }
