@@ -1,4 +1,3 @@
-import { ChevronDown } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -52,7 +51,6 @@ export const StudioSchedule = ({
                   {totalClassesPerWeek} classes/week
                 </p>
               </div>
-              <ChevronDown className="w-5 h-5 text-muted-foreground transition-transform duration-300 group-data-[state=open]:rotate-180" />
             </div>
           </AccordionTrigger>
           
@@ -67,7 +65,7 @@ export const StudioSchedule = ({
                     {day.classes.map((classItem, idx) => (
                       <div
                         key={idx}
-                        className={`flex items-start gap-3 p-3 rounded-lg transition-colors ${
+                        className={`flex items-center gap-3 p-3 rounded-lg transition-colors ${
                           classItem.type === "yoga"
                             ? "bg-yoga/10 border border-yoga/20"
                             : "bg-pilates/10 border border-pilates/20"
