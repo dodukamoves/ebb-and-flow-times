@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Vibrant Yoga & Pilates Color Palette */
-    --background: 0 0% 98%; /* soft white */
+    --background: 315 38% 95%; /* soft pink tint */
     --foreground: 0 0% 15%; /* dark text */
 
     --card: 0 0% 100%; /* white cards */
