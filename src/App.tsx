@@ -18,8 +18,8 @@ const App = () => (
           <Header />
           <main className="flex-1">
             <Routes>
-              <Route path="/schedule" element={<Schedule />} />
-              <Route path="*" element={<Navigate to="/schedule" replace />} />
+              <Route path="/" element={<Schedule />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </main>
         </div>
