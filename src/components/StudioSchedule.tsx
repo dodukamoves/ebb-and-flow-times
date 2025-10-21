@@ -36,11 +36,11 @@ export const StudioSchedule = ({
         <div className="bg-card rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-border">
           <AccordionTrigger className="px-6 py-5 hover:no-underline group">
             <div className="flex items-center gap-4 w-full">
-              <div className="w-14 h-14 rounded-xl bg-background flex items-center justify-center flex-shrink-0 shadow-sm">
+              <div className="w-14 h-14 rounded-xl bg-background flex items-center justify-center flex-shrink-0 shadow-sm p-2">
                 <img
                   src={logo}
                   alt={`${name} logo`}
-                  className="w-10 h-10 object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="flex-1 text-left">
