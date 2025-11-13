@@ -115,7 +115,7 @@ export const studiosData: StudioData[] = [
   },
   {
     name: "Vortex Dighomi",
-    totalClassesPerWeek: 12,
+    totalClassesPerWeek: 14,
     schedule: [
       {
         day: "Monday",
@@ -148,6 +148,12 @@ export const studiosData: StudioData[] = [
             name: "Pilates",
             duration: "45min",
             type: "pilates",
+          },
+          {
+            time: "09:00",
+            name: "Power Yoga",
+            duration: "60min",
+            type: "yoga",
           },
         ],
       },
@@ -182,6 +188,12 @@ export const studiosData: StudioData[] = [
             name: "Pilates",
             duration: "45min",
             type: "pilates",
+          },
+          {
+            time: "09:00",
+            name: "Power Yoga",
+            duration: "60min",
+            type: "yoga",
           },
         ],
       },
