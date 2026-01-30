@@ -2,9 +2,11 @@ import { StudioSchedule } from "@/components/StudioSchedule";
 import { studiosData } from "@/data/scheduleData";
 import oktopusLogo from "@/assets/oktopus-logo.png";
 import vortexLogo from "@/assets/vortex-logo.png";
+import roundsLogo from "@/assets/12rounds-logo.png";
 
 export default function Schedule() {
   const logos = {
+    "12 Rounds": roundsLogo,
     "Oktopus Vake": oktopusLogo,
     "Vortex Saburtalo": vortexLogo,
     "Vortex Dighomi": vortexLogo,
