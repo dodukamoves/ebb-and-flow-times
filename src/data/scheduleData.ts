@@ -143,7 +143,7 @@ export const studiosData: StudioData[] = [
   },
   {
     name: "Vortex Dighomi",
-    totalClassesPerWeek: 14,
+    totalClassesPerWeek: 13,
     schedule: [
       {
         day: "Monday",
