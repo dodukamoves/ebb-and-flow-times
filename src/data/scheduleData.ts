@@ -22,62 +22,6 @@ const getClassType = (name: string): "yoga" | "pilates" => {
 
 export const studiosData: StudioData[] = [
   {
-    name: "12 Rounds",
-    totalClassesPerWeek: 2,
-    schedule: [
-      {
-        day: "Tuesday",
-        classes: [
-          {
-            time: "11:30",
-            name: "Vinyasa Flow Yoga",
-            duration: "60min",
-            type: "yoga",
-          },
-        ],
-      },
-      {
-        day: "Thursday",
-        classes: [
-          {
-            time: "11:30",
-            name: "Vinyasa Flow Yoga",
-            duration: "60min",
-            type: "yoga",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    name: "Oktopus Vake",
-    totalClassesPerWeek: 2,
-    schedule: [
-      {
-        day: "Tuesday",
-        classes: [
-          {
-            time: "13:15",
-            name: "Intensive Pilates",
-            duration: "45min",
-            type: "pilates",
-          },
-        ],
-      },
-      {
-        day: "Thursday",
-        classes: [
-          {
-            time: "13:15",
-            name: "Yoga & Sadhu Board",
-            duration: "60min",
-            type: "yoga",
-          },
-        ],
-      },
-    ],
-  },
-  {
     name: "Vortex Saburtalo",
     totalClassesPerWeek: 8,
     schedule: [
