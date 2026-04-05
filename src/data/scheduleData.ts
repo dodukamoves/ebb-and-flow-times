@@ -16,257 +16,69 @@ export interface StudioData {
   totalClassesPerWeek: number;
 }
 
-const getClassType = (name: string): "yoga" | "pilates" => {
-  return name.toLowerCase().includes("pilates") ? "pilates" : "yoga";
-};
+const yoga = (time: string, name: string, duration = "60min"): ClassSession => ({
+  time, name, duration, type: "yoga",
+});
+
+const pilates = (time: string, name: string, duration = "45min"): ClassSession => ({
+  time, name, duration, type: "pilates",
+});
+
+const saburtaloClasses: ClassSession[] = [
+  yoga("15:00", "Vinyasa Flow Yoga"),
+  pilates("16:00", "Full Body Pilates"),
+  yoga("17:00", "Yoga Mix"),
+  pilates("18:00", "Power Pilates"),
+  pilates("19:00", "Core & Mobility Pilates"),
+  yoga("21:00", "Stretching Yoga"),
+];
+
+const dighomiMWF: ClassSession[] = [
+  yoga("08:00", "Morning Strength Yoga"),
+  yoga("09:00", "Vinyasa Flow Yoga"),
+  pilates("11:00", "Pilates Power Flow"),
+  yoga("13:00", "Stretching Yoga"),
+];
+
+const dighomiTTh: ClassSession[] = [
+  pilates("11:00", "Full Body Pilates"),
+  yoga("12:00", "Stretching Yoga"),
+];
+
+const gldaniClasses: ClassSession[] = [
+  pilates("16:00", "Pilates Power Flow"),
+  yoga("17:00", "Power Yoga"),
+  pilates("18:00", "Full Body Pilates"),
+  pilates("21:00", "Core & Mobility"),
+];
 
 export const studiosData: StudioData[] = [
   {
     name: "Vortex Saburtalo",
-    totalClassesPerWeek: 8,
+    totalClassesPerWeek: 12,
     schedule: [
-      {
-        day: "Tuesday",
-        classes: [
-          {
-            time: "15:00",
-            name: "Vinyasa Flow Yoga",
-            duration: "60min",
-            type: "yoga",
-          },
-          {
-            time: "18:00",
-            name: "Pilates",
-            duration: "45min",
-            type: "pilates",
-          },
-          {
-            time: "19:00",
-            name: "Pilates",
-            duration: "45min",
-            type: "pilates",
-          },
-          {
-            time: "21:00",
-            name: "Stretching Yoga",
-            duration: "60min",
-            type: "yoga",
-          },
-        ],
-      },
-      {
-        day: "Thursday",
-        classes: [
-          {
-            time: "15:00",
-            name: "Vinyasa Flow Yoga",
-            duration: "60min",
-            type: "yoga",
-          },
-          {
-            time: "18:00",
-            name: "Pilates",
-            duration: "45min",
-            type: "pilates",
-          },
-          {
-            time: "19:00",
-            name: "Pilates",
-            duration: "45min",
-            type: "pilates",
-          },
-          {
-            time: "21:00",
-            name: "Stretching Yoga",
-            duration: "60min",
-            type: "yoga",
-          },
-        ],
-      },
+      { day: "Tuesday", classes: saburtaloClasses },
+      { day: "Thursday", classes: saburtaloClasses },
     ],
   },
   {
     name: "Vortex Dighomi",
-    totalClassesPerWeek: 13,
+    totalClassesPerWeek: 16,
     schedule: [
-      {
-        day: "Monday",
-        classes: [
-          {
-            time: "08:00",
-            name: "Vinyasa Flow Yoga",
-            duration: "60min",
-            type: "yoga",
-          },
-          {
-            time: "09:00",
-            name: "Vinyasa Flow Yoga",
-            duration: "60min",
-            type: "yoga",
-          },
-          {
-            time: "11:00",
-            name: "Pilates",
-            duration: "45min",
-            type: "pilates",
-          },
-        ],
-      },
-      {
-        day: "Tuesday",
-        classes: [
-          {
-            time: "08:00",
-            name: "Pilates",
-            duration: "45min",
-            type: "pilates",
-          },
-          {
-            time: "09:00",
-            name: "Power Yoga",
-            duration: "60min",
-            type: "yoga",
-          },
-        ],
-      },
-      {
-        day: "Wednesday",
-        classes: [
-          {
-            time: "08:00",
-            name: "Vinyasa Flow Yoga",
-            duration: "60min",
-            type: "yoga",
-          },
-          {
-            time: "09:00",
-            name: "Vinyasa Flow Yoga",
-            duration: "60min",
-            type: "yoga",
-          },
-          {
-            time: "11:00",
-            name: "Pilates",
-            duration: "45min",
-            type: "pilates",
-          },
-        ],
-      },
-      {
-        day: "Thursday",
-        classes: [
-          {
-            time: "08:00",
-            name: "Pilates",
-            duration: "45min",
-            type: "pilates",
-          },
-          {
-            time: "09:00",
-            name: "Power Yoga",
-            duration: "60min",
-            type: "yoga",
-          },
-        ],
-      },
-      {
-        day: "Friday",
-        classes: [
-          {
-            time: "08:00",
-            name: "Vinyasa Flow Yoga",
-            duration: "60min",
-            type: "yoga",
-          },
-          {
-            time: "09:00",
-            name: "Vinyasa Flow Yoga",
-            duration: "60min",
-            type: "yoga",
-          },
-          {
-            time: "11:00",
-            name: "Pilates",
-            duration: "45min",
-            type: "pilates",
-          },
-        ],
-      },
+      { day: "Monday", classes: dighomiMWF },
+      { day: "Tuesday", classes: dighomiTTh },
+      { day: "Wednesday", classes: dighomiMWF },
+      { day: "Thursday", classes: dighomiTTh },
+      { day: "Friday", classes: dighomiMWF },
     ],
   },
   {
     name: "Vortex Gldani",
-    totalClassesPerWeek: 9,
+    totalClassesPerWeek: 12,
     schedule: [
-      {
-        day: "Monday",
-        classes: [
-          {
-            time: "18:00",
-            name: "Pilates",
-            duration: "45min",
-            type: "pilates",
-          },
-          {
-            time: "19:00",
-            name: "Vinyasa Flow Yoga",
-            duration: "60min",
-            type: "yoga",
-          },
-          {
-            time: "21:00",
-            name: "Pilates",
-            duration: "45min",
-            type: "pilates",
-          },
-        ],
-      },
-      {
-        day: "Wednesday",
-        classes: [
-          {
-            time: "18:00",
-            name: "Pilates",
-            duration: "45min",
-            type: "pilates",
-          },
-          {
-            time: "19:00",
-            name: "Vinyasa Flow Yoga",
-            duration: "60min",
-            type: "yoga",
-          },
-          {
-            time: "21:00",
-            name: "Pilates",
-            duration: "45min",
-            type: "pilates",
-          },
-        ],
-      },
-      {
-        day: "Friday",
-        classes: [
-          {
-            time: "18:00",
-            name: "Pilates",
-            duration: "45min",
-            type: "pilates",
-          },
-          {
-            time: "19:00",
-            name: "Vinyasa Flow Yoga",
-            duration: "60min",
-            type: "yoga",
-          },
-          {
-            time: "21:00",
-            name: "Pilates",
-            duration: "45min",
-            type: "pilates",
-          },
-        ],
-      },
+      { day: "Monday", classes: gldaniClasses },
+      { day: "Wednesday", classes: gldaniClasses },
+      { day: "Friday", classes: gldaniClasses },
     ],
   },
 ];
