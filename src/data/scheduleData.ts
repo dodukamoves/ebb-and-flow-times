@@ -75,7 +75,7 @@ export const studiosData: StudioData[] = [
   },
   {
     name: "Vortex Gldani",
-    totalClassesPerWeek: 12,
+    totalClassesPerWeek: 15,
     schedule: [
       { day: "Monday", classes: gldaniClasses },
       { day: "Wednesday", classes: gldaniClasses },
