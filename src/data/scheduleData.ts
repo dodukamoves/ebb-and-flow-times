@@ -46,7 +46,6 @@ const dighomiTTh: ClassSession[] = [
 ];
 
 const gldaniClasses: ClassSession[] = [
-  pilates("18:00", "Full Body Pilates"),
   pilates("21:00", "Core & Mobility"),
   pilates("22:00", "Core & Abs"),
 ];
@@ -73,7 +72,7 @@ export const studiosData: StudioData[] = [
   },
   {
     name: "Vortex Gldani",
-    totalClassesPerWeek: 9,
+    totalClassesPerWeek: 6,
     schedule: [
       { day: "Monday", classes: gldaniClasses },
       { day: "Wednesday", classes: gldaniClasses },
