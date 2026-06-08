@@ -46,11 +46,9 @@ const dighomiTTh: ClassSession[] = [
 ];
 
 const gldaniClasses: ClassSession[] = [
-  pilates("16:00", "Pilates Power Flow"),
-  yoga("17:00", "Power Yoga"),
   pilates("18:00", "Full Body Pilates"),
-  yoga("19:00", "Vinyasa Flow Yoga"),
   pilates("21:00", "Core & Mobility"),
+  pilates("22:00", "Core & Abs"),
 ];
 
 export const studiosData: StudioData[] = [
@@ -75,7 +73,7 @@ export const studiosData: StudioData[] = [
   },
   {
     name: "Vortex Gldani",
-    totalClassesPerWeek: 15,
+    totalClassesPerWeek: 9,
     schedule: [
       { day: "Monday", classes: gldaniClasses },
       { day: "Wednesday", classes: gldaniClasses },
